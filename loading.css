@@ -43,6 +43,28 @@ p, a, h1, h2, h3, h4, h5, h6
 	left: 50%;
 }
 
+.rainbow-text {
+	position: absolute;
+	background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+	text-align: center;
+	background-size: 800% 800%;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 24px;
+	animation: rainbow 8s ease infinite;
+	width: 500px;
+	margin-left: -250px;
+	top: 410px;
+	left: 50%;
+	
+}
+
+@keyframes rainbow { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 25%}
+    100%{background-position:0% 50%}
+}
+
 .spinner
 {
 	-webkit-animation: sk-rotateplane 4s infinite linear;
